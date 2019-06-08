@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEIHS SHOPPING CART</title>
+  <link rel="shortcut icon" type="image/x-icon" href="fav.png">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div class="shopping-cart">
+    <div class="title">
+      LEIHS SHOPPING CART
+    </div>
+
+    <!-- Product #1 -->
+    <div id="div1">
+      <div class="item">
+        <div class="buttons">
+          <span><button class="delete-btn" id="button1"></button></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="item-1.png" alt="Canon EOS 5D Mark IV" />
+        </div>
+
+        <div class="description">
+          <span>Digital Camera</span>
+          <span>EOS 5D Mark IV</span>
+          <span>Canon</span>
+        </div>
+
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+          <input id="input-1" type="text" name="name" value="1">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Product #2 -->
+    <div id="div2">
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn" id="button2"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="item-2.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span>Lens</span>
+          <span>EF 24-70mm f/2.8L</span>
+          <span>Canon</span>
+        </div>
+
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+          <input id="input-2" type="text" name="name" value="1">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product #3 -->
+    <div id="div3">
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn" id="button3"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="item-3.png" alt="" />
+        </div>
+
+        <div class="description">
+          <span>Hand Lightning</span>
+          <span>430EX II</span>
+          <span>Canon</span>
+        </div>
+
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+          <input id="input-3" type="text" name="name" value="1">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+    <div>
+      <input onclick="myFunction()" type="submit" value="SUBMIT ORDER" class="submit">
+      <script>
+        function myFunction() {
+          alert("Order Submitted, you'll receive an Email with the order number!");
+        }
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>
